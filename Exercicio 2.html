@@ -1,0 +1,35 @@
+<script>
+    var  aluno
+    var  nota1
+    var  nota2
+    var  media
+   
+    aluno = prompt (`Nome`)
+   do
+    {
+    nota1 = parseFloat (prompt (`Nota 1`))
+    if (!Number.isFinite(nota1))
+    {alert('Erro!')}
+    }
+    while ((!Number.isFinite (nota1)))
+    do
+    {
+    nota2 = parseFloat (prompt (`Nota 2`))
+    if (!Number.isFinite(nota2))
+    {alert('Erro!')}
+    }
+    while ((!Number.isFinite (nota2)))
+    
+    media = ((nota1 + nota2) /2)
+  
+    
+    if (media >= 6.5)
+    {
+    document.write ('O '+ aluno + ' teve a média ' + media + ', portanto está aprovado.')
+    }
+    else{
+    document.write ('O '+ aluno + ' teve a média ' + media + ', portanto está reprovado.')
+    }
+    
+    
+    </script>
